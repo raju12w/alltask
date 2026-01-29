@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPLICATION </title>
+</head>
+
+<body>
+    <center>
+        <table width="800" bgcolor="#E6E6FF" cellpadding="20" style="border-radius: 20px;">
+            <tr>
+                <td align="center">
+                    <img src="tsrtc-logo-compressed-image@5x.webp" height="100px" alt="TSRTC Logo"><br>
+                    <h2 style="color: blue; font-family: sans-serif;">TELANGANA STATE ROAD TRANSPORT CORPORATION</h2>
+                    <h2 style="font-family: serif;">GENERAL BUS PASS APPLICATION</h2>
+                </td>
+            </tr>
+        </table>
+    </center>
+    <br>
+    <center>
+        <form action="submit.html" method="get">
+            <fieldset style="width: 800px; border-radius: 10px;">
+                <legend style="font-family: serif; font-size: 20px; color: blue; background-color: #E6E6FF;">Applicant
+                    Details</legend>
+                <table width="900" border="0" cellpadding="10" cellspacing="0">
+
+
+                    <tr>
+                        <td><label for="name">Name <font color="red">*</font></label></td>
+                        <td>
+                            <input type="text" id="name" maxlength="20" name="Name"required><br>
+                            <small>
+                                <font color="red">(Maximum characters: 20)</font>
+                            </small>
+                        </td>
+                        <td><label for="father_name">Father / Guardian Name <font color="red">*</font></label></td>
+                        <td><input type="text" id="father_name" name="Father_name" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>Date of birth <font color="red">*</font><br>
+                            <small>
+                                <font color="blue">(dd/mm/yyyy)</font>
+                            </small>
+                        </td>
+                        <td><input type="date"></td>
+                        <td>Gender <font color="red">*</font>
+                        </td>
+                        <td>
+                            <input type="radio" name="gender"> Female
+                            <input type="radio" name="gender"> Male
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Age:</td>
+                        <td>
+                            <input type="number" size="2">
+                        </td>
+                        <td>Aadhaar No:</td>
+                        <td><input type="number" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>WhatsApp No <font color="red">*</font>
+                        </td>
+                        <td><input type="number"></td>
+                        <td>E-mail Id <font color="red">*</font>
+                        </td>
+                        <td><input type="email" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>Files<font color="red">*</font>
+                        </td>
+                        <td colspan="3">
+                            <input type="file" accept="docx,.pdf" required>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset style="width: 800px; border-radius: 10px;">
+                <th>
+                    <legend style="font-family: serif; font-size: 20px; color: blue; background-color: #E6E6FF;">Residential Address Details
+                </th>
+                </legend>
+                <table width="900" border="0" cellpadding="10" cellspacing="0">
+
+                    <td>Applicant's Address *</td>
+                <td colspan="3">
+                    <textarea rows="3" maxlength="20"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>District *</td>
+                <td>
+                    <select>
+                        <option>HYDERABAD</option>
+                        <option>bnreddy</option>
+                        <option>lb nagar</option>
+                        <option>Dsnr</option>
+                    </select>
+                </td>
+                <td>Mandal *</td>
+                <td>
+                    <select>
+                        <option>HYDERABAD</option>
+                        <option>kphb</option>
+                        <option>hitech city</option>
+                        <option>kokapet</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Village *</td>
+                <td>
+                    <select>
+                        <option>HYDERABAD</option>
+                        <option>bowenpally</option>
+                        <option>beerguda</option>
+                        <option>balanagar</option>
+                    </select>
+                </td>
+                <td>Pincode *</td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+    </fieldset>
+
+     <fieldset style="width: 800px; border-radius: 10px;">
+        <legend>Pass Type Details</legend>
+        <table width="900" border="0" cellpadding="10" cellspacing="0"></table>
+            <tr>
+                <td>City *</td>
+                <td>
+                    <select>
+                        <option>Hyderabad</option>
+                    </select>
+                </td>
+                <td>Pass Type *</td>
+                <td>
+                    <select>
+                        <option>GREATER PASS</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>From Place *</td>
+                <td><input type="text"></td>
+                <td>To Place *</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Route *</td>
+                <td colspan="3">
+                    <select>
+                        <option>Select</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset <fieldset style="width: 800px; border-radius: 10px;">
+        <legend>Mode of Payment & Pass Collection</legend>
+       <table width="900" border="0" cellpadding="10" cellspacing="0"></table>
+            <tr>
+                <td>Payment Mode *</td>
+                <td>
+                    <select>
+                        <option>Select Payment Mode</option>
+                    </select>
+                </td>
+                <td>Pass Delivery Mode *</td>
+                <td>
+                    <select>
+                        <option>Select Pass Delivery Mode</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Center to Collect Pass *</td>
+                <td colspan="3">
+                    <select>
+                        <option>Select</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <div class="captcha">OGhxgF</div>
+    <br>
+    <input type="text" placeholder="Enter Captcha" style="width:200px; display:block; margin:auto;">
+
+    <div class="submit-btn">
+        <button type="submit">Submit</button>
+    </div>
+</div>
+
+</body>
+</html>
